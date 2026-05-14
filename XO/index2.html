@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="wid">
+        <title>XO</title>
+        <link rel="stylesheet" href="XO.css">
+    </head>
+    <body>
+        <h1>X&O</h1>
+        <h2 id="gamestate"></h2>
+        <video autoplay muted loop id="vid">
+            <source src="vidBack.mp4" type="video/mp4">
+        </video>
+        <hr>
+        <br>
+        <div id="game-board">
+            <div data-cell-index="0" class="game-cell"></div>
+            <div data-cell-index="1" class="game-cell"></div>
+            <div data-cell-index="2" class="game-cell"></div>
+            <div data-cell-index="3" class="game-cell"></div>
+            <div data-cell-index="4" class="game-cell"></div>
+            <div data-cell-index="5" class="game-cell"></div>
+            <div data-cell-index="6" class="game-cell"></div>
+            <div data-cell-index="7" class="game-cell"></div>
+            <div data-cell-index="8" class="game-cell"></div>
+
+        </div>
+        <button id="game-restart-butt">Restart Game</button>
+        <script src="XO.js"></script>
+    </body>
+
+</html>

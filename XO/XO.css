@@ -1,0 +1,65 @@
+body{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+#vid{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+hr{
+    width: 500px;
+    height: 2px;
+    background-color: skyblue;
+    border: 0cap;
+}
+#game-board{
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    background-color: skyblue;
+    color: white;
+    border:6px solid lightblue ;
+    border-radius: 10px;
+    display: grid;
+    grid-template: repeat(3,1fr) / repeat(3,1fr);
+}
+.game-cell{
+    border: 6px solid lightblue;
+    border-radius: 2px;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.winning-game-cell{
+    background-color: green;
+    color: skyblue;
+}
+
+#game-restart-butt{
+    height: 50px;
+    width: 150px;
+    border: 5px solid lightblue;
+    border-radius: 5px;
+    background-color: rgb(104, 201, 48);
+    margin-top: 20px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+#game-restart-butt:hover {
+    background-color: #00ff88;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00ff88;
+    cursor: pointer;
+}
