@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="main.js" defer></script>
+
+</head>
+<body>
+
+        <div class="container">
+             <nav>
+            <div>
+                <ul>
+                    <li><a href="sign_up.html">Sign_Up</a></li>
+                    <li><a href="log_in.html">Log_In</a></li>
+                    <li><a href="index.html">Password Generator</a></li>
+                    <li><a href="index1.html">Get Your Sale</a></li>
+                    <li><a href="index2.html">Game</a></li>
+                </ul>
+            </div>
+        </nav>
+            <h1>Password Generator</h1>
+            <form action="">
+                <div class="checkboxes">
+                <label for="Symbols"><input type="checkbox" id="Symbols" name="Symbols" >Symbols
+                </label>
+                <label for="Numbers"><input type="checkbox" id="Numbers" name="Numbers">Numbers
+                </label>
+                <label for="Lowercase"><input type="checkbox" id="Lowercase" name="Lowercase">Lowercase
+                </label>
+                <label for="Uppercase"><input type="checkbox" id="Uppercase" name="Uppercase">Uppercase
+                </label>
+                </div>
+                <div class="lengthInput">
+                <label for="lengthInput">Length:
+                <input type="range" class="lengthInput" id="lengthInput" min="6" max="100" value="6">
+                <span id="rlength">6</span>
+                </label>
+                </div>
+                <div class="button">
+                <input type="button"class="generate-btn" value="Generate"></div>
+
+                <div class="password-box">
+                <input type="text" class="password" id ="password" readonly placeholder="Password">
+                <div class="icon">
+                <button type="button" class="copy-btn">
+                    <div class="copy">
+                <i class="fa-regular fa-copy"></i>
+                </div>
+                <div class="copied">
+                <i class="fa-solid fa-copy"></i>
+                </div>
+                </button>
+                </div>
+                </div>
+                
+
+                
+            </form>
+
+        </div>
+
+</body>
+</html>
